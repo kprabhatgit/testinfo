@@ -1,0 +1,260 @@
+LBG (Lloyds Banking Group)has embarked upon implementing a holistic solution to create a Transaction Management Hub (TMH) covering e-payments (domestic and international), cards, and clearing transactions in various lines of businesses. The Transaction Management Hub had committed to routing all payment schemes . In order to deliver this full capability the implementation has been broken down into several transition states in order to incrementally build up the capability of processing all schemes. The Accounting Hub will be the single point to process all posting transactions to the product platforms. It will align to the TMH route-to-live strategy and deliver capability to post for the payment schemes.
+The accounting hub will abstract the product platforms from the payment engines. Today the payment engine has the necessary logic to perform account postings directly with the product platforms. This results in multiple point-to-point interfaces between the payment engines and the product platforms. This has resulted in tight coupling between the payment engines and the product platforms. If an account migrates from one product platform to another the payment engines have to refresh their reference data. This strong dependency also limits changes towards the integration points between the payment engines and the product platforms. Additionally the payment engines has to maintain scheme specific integration points with the product platforms this increases the count of number of interfaces a payment engine has to maintain. All of these issues make the current landscape complex, and costly to maintain or change.
+
+Complexity 
+
+In order to resolve this business problem,the solution had to be developed using an Accounting hub will be the single channel through which the account positing will be forwarded to the product platforms. Hence the payment engine will send product platform agnostic posting request to accounting hub. Accounting hub will identify the correct product platform and invoke the appropriate interface on the product platform. Accounting hub will also maintain all necessary reference data required for account posting to the product platform. This solves the problem of data duplication, impact due to account migrations, and interface changes on the product platforms.
+	
+	
+	
+	
+	
+	
+
+Please confirm that the following criteria has been addressed in Business Opportunity or Problem description you have provided:
+	
+
+General Criteria Checklist
+	
+	
+
+Criteria Met During this Project?
+	
+	
+	
+	
+	
+	
+
+Understand Business Aspects: understand the stakeholders' business needs and how they relate to their business and mission. IBM Certified professionals must have business insight into how all activities and work products serve the business needs of a variety of stakeholders and how they relate to the larger business context.
+
+L1: Experienced
+
+ 
+	
+
+	
+
+	
+ 
+	
+
+Elicit and manage stakeholder requirements: given approved business goals, objectives, and constraints, document, clarify, refine, detail, and prioritize functional and non-functional requirements. IBM Certified Architects need to be able to take business goals, objectives, and constraints, and to define the functional and non- functional requirements that can meet them. They also need to be able to identify stakeholders and ensure that the requirements they have identified meet their needs.
+
+L1: Experienced
+
+
+Establish vision: Given requirements and a list of stakeholders, identify approaches, tools, techniques, and technologies to meet the requirements, and explain the present and future rationale so that stakeholders accept the choices and agree with the rationale. IBM Certified Architects must be able to establish a vision that meets business requirements and is agreed to by stakeholders. 
+
+Architectural complexity: Experience producing architectures that:
+
+    Involve the application and integration of a number of dimensions (products, technologies, services, processes, management, security, governance, etc.) from either the business, enterprise, or solution perspective.
+
+    Encompass functional components together with non-functional or operational components.
+
+IBM Certified Architects have a variety of experiences that demonstrate their ability to successfully deliver solutions to complex problems.  For Business Architects, this could involve business’ strategic intent (e.g., business vision, mission, business logic, ambition) with some operational aspects (e.g., people, process, technology, management).
+
+For IT and Enterprise Architects, this could involve the application and integration of different products, technologies, and services, or domains.
+
+    L1: Architectural complexity is demonstrated across more than one (1) dimension or domain. 
+
+
+Client Relationship Management:  The Architect must have a high level of communications, consulting, and client relationship skills. The Architect must be able to clearly communicate complex technical and business concepts, both to clients (internal or external) and to team members, and to negotiate change. Problem-solving of client business and technical issues is a principle role of the IT Architect, and he or she must be capable of effectively identifying and framing problems, leading the collection of elements of information, and integrating this information to produce timely and thoughtful decisions.
+
+L1: Experienced
+
+
+------------------------------------------
+
+
+
+Briefly describe the solution you implemented, deliverables prepared, technology used, etc. Your description should address the following:
+
+    Describe the solution you developed and the expected benefit for the client.Include how the benefits were shown to the client including the expected benefits from a successful implementation.
+    Describe how the solution addressed key functional and non-functional requirements.
+    Describe any standards or industry direction you took in the development of the solution.
+    Describe your role in the engagement and your specific tasks, responsibilities, and accomplishments, including your role in planning the effort, tracking progress and reporting to the IBM and Client project management. You should be able to show how you performed as a lead technical resource in:the architectural design, development, implementation and/or management of the project.
+    Summarize the key technical decisions you made, the reasons for the decisions, and the alternatives that were considered.Ensure you describe how your mitigated risk to maximize client value.
+    Describe the major problems or obstacles you encountered, and the actions you took to overcome them.
+
+
+---------------------
+You may add an attachment with images, diagrams and tables. You should not attach project documents such as presentation, SOWs, etc.Your documented evidence must answer the criteria. For multiple files, create one ZIP file to attach. Maximum file size is 5MB.
+
+
+
+Define Solutions to Functional and non-functional requirements:  given the functional and non-functional requirements, define a solution that meets the stated requirements using the Organization’s and industry standard procedures and tools. IBM Certified Architects must demonstrate their ability to work with requirements using standard procedures and tools from the organization and/or industry such that the solution characteristics meet the given functional and non-functional requirements.
+
+L1: Experienced
+
+
+
+
+
+Assess the overall success or failure of the project from the standpoint of:
+
+    Client Satisfaction
+    Quality of deliverables
+    Performance of the IBM team
+    Progression of the opportunity
+    KPIs delivered on
+    Sales results and/or software burn down
+    Next steps
+
+	
+
+
+
+Architectural Thinking 
+
+Describe how you used Architectural Thinking by apply sound, creative, and innovative architectural thinking to enhance and expand implementation of architectural principles, practices, and concepts to meet the business intent or the delivery of solutions.  Apply strategic architectural thinking to mission, strategy, and vision in ways that deliver positive impact and results to the business.  Provide break-though architectural thinking to the innovative application of information technology to deliver greater business value.
+
+L1: Experienced
+
+ 
+	
+*
+4,000 characters maximum
+	
+	
+	
+	
+	
+	
+
+Please confirm that the following criteria has been addressed in the Architectural Thinking description you have provided:
+	
+
+General Criteria Checklist
+	
+
+Criteria Met During this Project?
+	
+
+Mediate equitable solutions:  Mediate opposing viewpoints and negotiate equitable solutions to ensure successful and stable outcomes. Given a conflict that jeopardizes the integrity of the solution, mediate differing stakeholder opinions to arrive at equitable resolutions that ensure successful and stable outcomes.  IBM Certified professionals must be capable of maintaining the integrity of their work products while simultaneously serving the needs of multiple stakeholders of diverse needs.
+
+L1: Experienced
+
+ 
+	
+
+	
+
+	
+ 
+	
+
+Establish Architectural Decisions: Determine, document, and communicate architectural decisions to support and rationalize the design of the solution. IBM Certified Architects must be able to establish their architectural decisions by communicating them to stakeholders so as to achieve their understanding and commitment.
+
+L1: Experienced
+
+ 
+	
+
+	
+
+	
+ 
+	
+
+Architectural Methods
+
+Describe how you used Architectural Methods by Following processes, techniques, and guidelines to produce deliverables that communicate their designs, which instruct the various downstream resources in the assembly and operation of that given a work effort, adapt, apply, and enforce the use of a method that meets the method recognition criteria documented on the Open CA website to successfully create architectural work products that meet the requirements of the work effort. Candidates are not required to have used more than one recognized method.  IBM Certified Architects must demonstrate the ability to adapt and follow a recognized method to help ensure repeatability of delivery and success. The use of methods usually requires selection of work products and processes (adaptation). Methods are seldom adopted without change.
+
+L1: Experienced
+	
+*
+4,000 characters maximum
+	
+	
+	
+	
+	
+	
+
+Please confirm that the following criteria has been addressed in the Architectural Methods description you have provided: 
+
+Given a work effort, adapt, apply, and enforce the use of a method that meets the method recognition criteria documented on the Open CA website to successfully create architectural work products that meet the requirements of the work effort.  IBM Certified Architects must demonstrate the ability to adapt and follow a recognized method to help ensure repeatability of delivery and success. The use of methods usually requires selection of work products and processes (adaptation). Methods are seldom adopted without change.
+
+L1: Experienced
+
+ 
+	
+
+General Criteria Checklist
+	
+
+Criteria Met During this Project?
+	
+
+Apply Architecture Methods:  Given a work effort, adapt, apply, and enforce the use of an Enterprise Architecture method that meets the method recognition criteria in Section 29 of the Conformance Requirements to successfully create architectural work products that meet the requirements of the work effort.  Demonstrated ability to follow a recognized method ensures repeatability of delivery and success.  Candidates are not required to have used more than one recognized method.
+
+L1: Experienced
+	
+
+	
+
+	
+ 
+	
+
+Use Modeling Techniques:  Use modeling techniques – such as use-case, scenario modeling, prototyping, benchmarking, and performance modeling – to describe the problem space, to size the solution, and to validate that the proposed architecture addresses the business requirements.
+
+L1: Experienced
+
+ 
+	
+
+	
+
+	
+ 
+	
+
+Risk Management 
+
+Describe how you used risk management techniques to identify the elements of a project that put the integrity of the architecture at risk and managed those elements to the successful completion of the project. Given a project plan, identify those elements of the plan that put the integrity of any aspects of the plan/timeline at risk. Manage those elements through to completion as agreed by the client/project manager.  IBM Certified professionals must be able to work closely with clients/project managers and address issues in project plans that put their work at risk. They must be able communicate the likelihood and impact of architectural risks and come to a mutual agreement with clients/project managers.
+
+L1: Experienced
+
+ 
+ 
+	
+*
+4,000 characters maximum
+	
+
+Please confirm that the following criteria has been addressed in the Risk Management description you have provided:
+	
+
+Manage Discipline Specific Risks within a Project:  Guide an organization’s strategy to recognize the weak links in their technical plans and implementation in a way that mitigates risk and facilitates the organization’s closure of gaps.
+
+L1: Experienced
+
+ 
+	
+
+	
+
+	
+Collapse 	
+					
+	
+
+Your description should address the following questions:
+
+    What might you have done differently on this project?
+    What lessons did you learn from this experience?
+    How did this change your behavior or decisions on subsequent engagements? Consider the entire solution lifecycle from strategy, design, implementation and management through to completion.
+
+	
+*
+4,000 characters maximum
+	
+Collapse 	
+		
+	
+
+If you would like a mentor to review your application before submitting, enter their email and then click "Invite Mentor".
+
+*

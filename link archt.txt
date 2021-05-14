@@ -1,0 +1,14 @@
+KeyLinks
+
+    Architect Certification -> https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W9249b233310e_46b6_940b_d8ef762886cd/page/Certification%20Roadmap 
+
+2.  Banking Industry Collaboration HUB -> https://w3-connections.ibm.com/communities/service/html/communityview?communityUuid=df40384e-b719-4641-ba0f-5c3cd03b95ac
+3. Industry Badges -> https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W902e03401bb8_45f4_a050_d23ab8ed019a/page/Industry%20Badge%20information
+4. Lighthouse -> https://w3-03.ibm.com/services/lighthouse/
+5. Architecture Center - Cloud Garage -. https://www.ibm.com/cloud/garage/architectures/
+6. UML Basics -> https://www.ibm.com/developerworks/rational/library/769.html
+7. Method Hub -> https://methodhub.w3ibm.mybluemix.net/#/home
+8. ADS Standard -> http://domino.research.ibm.com/tchjr/journalindex.nsf/2733206779564b3d85256bd500483abf/20bc8e5bbe4a8e9085256bfa00685ce2%21OpenDocument
+9. TEC Community-> 
+10. Cloud Innovate Method -> http://cloudinnovate.w3ibm.mybluemix.net/advise.html
+

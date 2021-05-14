@@ -1,0 +1,27 @@
+application level componet--This is related to business perspective
+
+Technical level component-- This is related to product and whcih product will use.
+
+high cohesion, more friendly
+
+Application Level oertaional model
+Techical operationa model
+
+Logical operation model
+
+Physical operation model
+
+unsized POm 
+---this p server, laptop etc..
+
+sized POM
+
+
+
+http://w3.tap.ibm.com/medialibrary/media_view?id=308893
+
+
+Deck 1 - http://w3.tap.ibm.com/medialibrary/media_view?id=308417 Deck 2 - http://w3.tap.ibm.com/medialibrary/media_view?id=308419 Deck 3 - http://w3.tap.ibm.com/medialibrary/media_view?id=308420 Deck 4 - http://w3.tap.ibm.com/medialibrary/media_view?id=308421 Deck 5 - http://w3.tap.ibm.com/medialibrary/media_view?id=308422
+hope this helps
+7:13 PM
+Deack from previous sessions Deck 1 - http://w3.tap.ibm.com/medialibrary/media_view?id=308417 Deck 2 - http://w3.tap.ibm.com/medialibrary/media_view?id=308419 Deck 3 - http://w3.tap.ibm.com/medialibrary/media_view?id=308420 Deck 4 - http://w3.tap.ibm.com/medialibrary/media_view?id=308421 Deck 5 -

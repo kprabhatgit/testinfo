@@ -1,0 +1,21 @@
+i have expectation with this class how we can definea and identify the static and dynamic behaviour of system.how can we model system elements, the externally manifested properties of those elements.
+
+Light house
+collaboration hub 
+
+These above are repositories where we can refer refernce architecture.
+
+case study
+department os stistics
+population,society,health,and ecoomy 
+
+bneed
+
+system conext diagram
+high level usecase model,
+list of NFR
+
+
+
+
+

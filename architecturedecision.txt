@@ -1,0 +1,15 @@
+ticket for network issue
+
+narendra panwar
+
+in6175864 
+
+005643
+
+
+Architecture decision :
+
+Offload Web content and applications to e Services Gateway to improve response time and apply hardened security for access through internet
+
+
+ www.lucidchart.com

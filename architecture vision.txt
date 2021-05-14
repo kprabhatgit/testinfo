@@ -1,0 +1,24 @@
+
+Architecture vision
+
+I was the Billing Architect for Program Telco at Telco, one of the few transformation programs in IBM that successfully replaced aging core legacy systems and went
+live in a reasonable period of time. This was achieved without major customer impacts in three geographies. IBM revenue was $n million.
+Billing was one of three major solution components. It delivered complex Telco offerings to position Telco favourably in a competitive market. As this was a package enabled
+business transformation, the role required strong leadership working with the client business community. Integration of over 40 existing systems with a billing package not
+previously implemented to run Telco system load required strong technical leadership. Through the architecture, design, build and test of the technical architecture I led a
+technical team of 30+ people onsite. The solution is still in production today. Refer to Experience Profile: Billing in Program Telco.
+
+
+
+DEMONSTRATE BUSINESS IMPACT
+
+Program Telco successfully replaced separate legacy billing systems for Telco Region across three countries by a single solution. The key business benefit for Telco
+was the ability to go to market with complex offerings that included bundling and discounting in highly competitive mobile markets. The business impact for IBM
+included revenues of $n million. The design was proposed for use in Telco Qatar. Refer to Experience Profile: Billing in Program Telco for more details.
+
+
+My contributions to this program were:
+Leadership of development of the core billing technical solution through to customer acceptance of architecture deliverables
+Persistence in pursuing a predictive performance model of billing run times that allowed timely corrective changes to the vendor
+
+
