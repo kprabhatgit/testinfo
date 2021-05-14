@@ -1,0 +1,188 @@
+<SOAPEnv:Envelope xmlns:SOAPEnv="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAPEnv:Header>
+		<CBSRq:CBSAppGrp xmlns:CBSRq="http://xml.lloydsbanking.com/Schema/Enterprise/CoreBanking/CBS" mustReturn="true">
+			<CBSRq:CBS_Applcn_Group_Lookup_Id>309751</CBSRq:CBS_Applcn_Group_Lookup_Id>
+		</CBSRq:CBSAppGrp>
+		<LTSBInfra:ServiceRequest xmlns:LTSBInfra="http://www.lloydstsb.com/Schema/Infrastructure/SOAP" mustReturn="true">
+			<LTSBInfra:ServiceName>http://xml.lloydsbanking.com/Schema/Enterprise/CoreBanking/CBS/E434_Fun_CBS_Tfr_No_BalChk</LTSBInfra:ServiceName>
+			<LTSBInfra:Action>E434</LTSBInfra:Action>
+			<LTSBInfra:From>wmbda501</LTSBInfra:From>
+		</LTSBInfra:ServiceRequest>
+		<LTSBInfra:ContactPoint xmlns:LTSBInfra="http://www.lloydstsb.com/Schema/Infrastructure/SOAP" mustReturn="true">
+			<LTSBInfra:ContactPointType>003</LTSBInfra:ContactPointType>
+			<LTSBInfra:ContactPointId>0000309751</LTSBInfra:ContactPointId>
+			<LTSBInfra:ApplicationId>ACCHUB</LTSBInfra:ApplicationId>
+			<LTSBInfra:OperatorType>System</LTSBInfra:OperatorType>
+		</LTSBInfra:ContactPoint>
+		<OasisWs:Security xmlns:OasisWs="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" mustReturn="true">
+			<OasisWs:UsernameToken Id="LloydsTSBSecurityToken" OasisWs:UNPMechanismType="LTPA" OasisWs:UserType="045">
+				<OasisWs:Username>ACCHUB</OasisWs:Username>
+			</OasisWs:UsernameToken>
+		</OasisWs:Security>
+		<StateManagementHeader mustReturn="true">
+			<ContextInfo>
+				<InputMQMD>
+					<SourceQueue>ACH_APS_ACC_POST_REQ_PHY</SourceQueue>
+					<Transactional>TRUE</Transactional>
+					<Encoding>273</Encoding>
+					<CodedCharSetId>819</CodedCharSetId>
+					<Format>MQSTR   </Format>
+					<Version>2</Version>
+					<Report>0</Report>
+					<MsgType>8</MsgType>
+					<Expiry>-1</Expiry>
+					<Feedback>0</Feedback>
+					<Priority>0</Priority>
+					<Persistence>1</Persistence>
+					<MsgId>0000000000000000000000000000000001eddcdbc67d5d87</MsgId>
+					<CorrelId>0000000000000000000000000000000001eddcdbc67d5d87</CorrelId>
+					<BackoutCount>0</BackoutCount>
+					<ReplyToQ>PMH.FTM.ACH_TXB_APS_ACC_POST.REPLY.SIT3         </ReplyToQ>
+					<ReplyToQMgr>QUD7                                            </ReplyToQMgr>
+					<UserIdentifier>bud7        </UserIdentifier>
+					<AccountingToken>0000000000000000000000000000000000000000000000000000000000000000</AccountingToken>
+					<ApplIdentityData>                                </ApplIdentityData>
+					<PutApplType>2</PutApplType>
+					<PutApplName>BUD7                        </PutApplName>
+					<PutDate>2015-08-14</PutDate>
+					<PutTime>11:32:21.130</PutTime>
+					<ApplOriginData>    </ApplOriginData>
+					<GroupId>000000000000000000000000000000000000000000000000</GroupId>
+					<MsgSeqNumber>1</MsgSeqNumber>
+					<Offset>0</Offset>
+					<MsgFlags>0</MsgFlags>
+					<OriginalLength>-1</OriginalLength>
+				</InputMQMD>
+				<ACHInternal>
+					<ACHHeader>
+						<MessageType>ACHControl</MessageType>
+						<Source>com.lbg.ach.map.router.ACH_MAP_ROUTER_MF</Source>
+					</ACHHeader>
+					<ACHControl>
+						<ControlData>
+							<FlowControl>
+								<ServiceName>APS</ServiceName>
+								<ModelID>4</ModelID>
+								<MessageType>ApplyPaymentPostingRequest</MessageType>
+								<Source>Transaction Bus</Source>
+								<FlowSequence>1</FlowSequence>
+							</FlowControl>
+							<FlowControl>
+								<ServiceName>APS</ServiceName>
+								<ModelID>5</ModelID>
+								<MessageType>ApplyPaymentPostingRequest</MessageType>
+								<Source>Transaction Bus</Source>
+								<FlowSequence>2</FlowSequence>
+							</FlowControl>
+							<FlowControl>
+								<ServiceName>APS</ServiceName>
+								<ModelID>6</ModelID>
+								<MessageType>ApplyPaymentPostingRequest</MessageType>
+								<Source>Transaction Bus</Source>
+								<FlowSequence>3</FlowSequence>
+							</FlowControl>
+							<SequenceData>
+								<CurrentModelID>5</CurrentModelID>
+								<CurrentModelSequence>2</CurrentModelSequence>
+								<PreviousSequence>1</PreviousSequence>
+								<CurrentSequence>2</CurrentSequence>
+								<ALTR_DESTINATION>ACH_MAP_ROUTER_PHY</ALTR_DESTINATION>
+								<ALTR_DESTINATION_TYPE>QUEUE</ALTR_DESTINATION_TYPE>
+							</SequenceData>
+						</ControlData>
+						<ContextData>
+							<Sequence>1</Sequence>
+							<BusinessData>
+								<InitialOriginatorId>Transaction Bus</InitialOriginatorId>
+								<transactionType>Normal</transactionType>
+								<value>Personal Account</value>
+								<schemeName>GBPTransfer</schemeName>
+								<action>N</action>
+								<transactionDate>2015-08-14T00:00:00</transactionDate>
+								<effectiveDate>2015-08-14T00:00:00</effectiveDate>
+								<from>TMH_TxnBus</from>
+								<alternateId/>
+								<accountingTransaction>
+									<theCurrencyCode>GBP</theCurrencyCode>
+									<accntEffectType>Debit</accntEffectType>
+									<theCurrencyAmount>1.00</theCurrencyAmount>
+									<description>Defect 16095             TO 04198101 309751       </description>
+									<AccountNo>30456768</AccountNo>
+									<SortCd>309664</SortCd>
+								</accountingTransaction>
+								<accountingTransaction>
+									<theCurrencyCode>GBP</theCurrencyCode>
+									<accntEffectType>Credit</accntEffectType>
+									<theCurrencyAmount>1.00</theCurrencyAmount>
+									<description>Test 16095               FR 30456768 309664       </description>
+									<AccountNo>04198101</AccountNo>
+									<SortCd>309751</SortCd>
+								</accountingTransaction>
+								<StandinFlag>N</StandinFlag>
+							</BusinessData>
+							<ACHTransID>4874499420150814123221157</ACHTransID>
+							<IFWTransID>1000031287</IFWTransID>
+							<datasourceName>Transaction Bus</datasourceName>
+							<ChannelInd>APS</ChannelInd>
+							<TCMUpdateQueueName>ACH_TCM_INSERT_PHY</TCMUpdateQueueName>
+							<SoapHeaders>&lt;RequestSoapHeaders&gt;&lt;NS1:ServiceRequest xmlns:NS1=&quot;http://www.lloydstsb.com/Schema/Infrastructure/SOAP&quot;&gt;&lt;NS1:ServiceName&gt;http://www.lloydstsb.com/Schema/ArrangementAccountProcessing/IFW/ArrangementAccountProcessingService&lt;/NS1:ServiceName&gt;&lt;NS1:Action&gt;N&lt;/NS1:Action&gt;&lt;NS1:From&gt;TMH_TxnBus&lt;/NS1:From&gt;&lt;NS1:MessageId&gt;1000031287&lt;/NS1:MessageId&gt;&lt;/NS1:ServiceRequest&gt;&lt;NS2:Security xmlns:NS2=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot;&gt;&lt;NS2:UsernameToken Id=&quot;LloydsTSBSecurityToken&quot; NS2:UNPMechanismType=&quot;LTPA&quot; NS2:UserType=&quot;047&quot;&gt;&lt;NS2:Username&gt;TMH_TxnBus&lt;/NS2:Username&gt;&lt;NS2:Password/&gt;&lt;/NS2:UsernameToken&gt;&lt;/NS2:Security&gt;&lt;NS3:ContactPoint xmlns:NS3=&quot;http://www.lloydstsb.com/Schema/Infrastructure/SOAP&quot;&gt;&lt;NS3:ContactPointType&gt;003&lt;/NS3:ContactPointType&gt;&lt;NS3:ContactPointId&gt;0000309664&lt;/NS3:ContactPointId&gt;&lt;NS3:ApplicationId&gt;AL05810&lt;/NS3:ApplicationId&gt;&lt;NS3:InitialOriginatorId&gt;Transaction Bus&lt;/NS3:InitialOriginatorId&gt;&lt;NS3:OperatorType&gt;Customer&lt;/NS3:OperatorType&gt;&lt;/NS3:ContactPoint&gt;&lt;/RequestSoapHeaders&gt;</SoapHeaders>
+							<TargetRoutingDetails>
+								<ReplyToQ>PMH.FTM.ACH_TXB_APS_ACC_POST.REPLY.SIT3         </ReplyToQ>
+								<ReplyToQmgr>QUD7                                            </ReplyToQmgr>
+								<MsgId>0000000000000000000000000000000001eddcdbc67d5d87</MsgId>
+								<RcbsCompensationQname>ACH_APS_RCBS_ACCT_POST.01</RcbsCompensationQname>
+								<RcbsCorrelatioId>0000000000000000000000000000000001eddcdbc67d5d87</RcbsCorrelatioId>
+							</TargetRoutingDetails>
+							<SourceId>ACHInternal</SourceId>
+							<AcctPlatform>RCBS</AcctPlatform>
+							<TargetInterfaceName>ApplyPaymentPostingRequest_RCBS_ONLINE_TMH_TxnBus_Transaction Bus</TargetInterfaceName>
+							<MapLabelName>ACH_RCBS_E434_REQ_MAP</MapLabelName>
+							<NextFlowDestination>ACH_RCBS_REQ_IH_PHY</NextFlowDestination>
+							<PlatformAvailabilty>Available</PlatformAvailabilty>
+							<HeritageName>LTSB</HeritageName>
+							<ParentGrpId>4874499420150814123221157001</ParentGrpId>
+							<ParentExceSequence>1</ParentExceSequence>
+							<InnerExceSequence>1</InnerExceSequence>
+							<GroupId>4874499420150814123221157001001</GroupId>
+							<GroupDetailId>4874499420150814123221157001001001</GroupDetailId>
+							<GrpTransCount>1</GrpTransCount>
+							<InterfaceHandlerQ>ACH_RCBS_REQ_IH_PHY</InterfaceHandlerQ>
+						</ContextData>
+					</ACHControl>
+				</ACHInternal>
+				<AccountDetails>
+					<AccountNumber>04198101</AccountNumber>
+					<SortCode>309751</SortCode>
+				</AccountDetails>
+				<AccountDetails>
+					<AccountNumber>30456768</AccountNumber>
+					<SortCode>309664</SortCode>
+				</AccountDetails>
+			</ContextInfo>
+		</StateManagementHeader>
+	</SOAPEnv:Header>
+	<SOAPEnv:Body>
+		<NS1:E434Request xmlns:NS1="http://xml.lloydsbanking.com/Schema/Enterprise/CoreBanking/CBS">
+			<NS1:MaxRepeatGroupQy>0</NS1:MaxRepeatGroupQy>
+			<NS1:CBSRequestGp2>
+				<NS1:UniqueSequenceNo>21830</NS1:UniqueSequenceNo>
+				<NS1:InputOfficerFlagStatusCd>0</NS1:InputOfficerFlagStatusCd>
+				<NS1:OverrideDetailsCd>1</NS1:OverrideDetailsCd>
+			</NS1:CBSRequestGp2>
+			<NS1:CBSAccountNoId>30975104198101</NS1:CBSAccountNoId>
+			<NS1:Transaction1Am>000000000000100</NS1:Transaction1Am>
+			<NS1:TxnChqNumFlagId>0</NS1:TxnChqNumFlagId>
+			<NS1:CurrencyFlagCd>1</NS1:CurrencyFlagCd>
+			<NS1:CurrencyCd>GBP</NS1:CurrencyCd>
+			<NS1:AccNumCBSRecpntId>30966430456768</NS1:AccNumCBSRecpntId>
+			<NS1:FnclDepTxnRef1FlagTx>1</NS1:FnclDepTxnRef1FlagTx>
+			<NS1:FnclDepTxnRef1Tx>Test 16095               </NS1:FnclDepTxnRef1Tx>
+			<NS1:FnclDepTxnRef2FlagTx>1</NS1:FnclDepTxnRef2FlagTx>
+			<NS1:FnclDepTxnRef2Tx>FR 30456768 309664       </NS1:FnclDepTxnRef2Tx>
+			<NS1:FnclPayTxnRef4FlagTx>1</NS1:FnclPayTxnRef4FlagTx>
+			<NS1:FnclPayTxnRef4Tx>Defect 16095             </NS1:FnclPayTxnRef4Tx>
+			<NS1:FnclPayTxnRef5FlagTx>1</NS1:FnclPayTxnRef5FlagTx>
+			<NS1:FnclPayTxnRef5Tx>TO 04198101 309751       </NS1:FnclPayTxnRef5Tx>
+		</NS1:E434Request>
+	</SOAPEnv:Body>
+</SOAPEnv:Envelope>
